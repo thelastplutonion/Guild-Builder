@@ -2,11 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseJobClass
+[CreateAssetMenu(fileName = "New Job", menuName = "Job")]
+public class BaseJobClass : ScriptableObject
 {
     //Character Information
-    private string jobName, jobDescription;
+    public string jobName, jobDescription;
     private int health, mana, stamina;
+
+    public void AddJob(BaseCharacter character) { 
+        if(jobName == "Artisan") {
+            character.intelligence += 5;
+            character.magic += 3;
+            character.strength -= 4;
+        }
+        else if (jobName == "Brute")
+        {
+            character.strength += 5;
+            character.durability += 3;
+            character.intelligence -= 4;
+        }
+    }
 
     public string JobName
     {

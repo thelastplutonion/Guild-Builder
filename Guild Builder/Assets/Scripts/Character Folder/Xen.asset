@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483fa58a492381e4f81a0e357137fc80, type: 3}
+  m_Name: Xen
+  m_EditorClassIdentifier: 
+  name: Xen
+  job: {fileID: 11400000, guid: 538bfb824a8029545b23d40410d718e6, type: 2}
+  age: 24
+  strength: 19
+  durability: 6
+  agility: 16
+  intelligence: 14
+  magic: 19
+  luck: 17
+  potential: 9
+  stats: 1300000006000000100000000e000000130000001100000009000000
