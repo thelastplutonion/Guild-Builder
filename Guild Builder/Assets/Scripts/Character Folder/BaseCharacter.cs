@@ -7,7 +7,7 @@ public class BaseCharacter : ScriptableObject{
 
     public new string name;
     public BaseJobClass job;
-    public int age, strength, durability, agility, intelligence, magic, luck, potential;
+    public int lvl, health, age, strength, durability, agility, intelligence, magic, luck, potential;
     public int[] stats = new int[7];
     private int tempMax;
 

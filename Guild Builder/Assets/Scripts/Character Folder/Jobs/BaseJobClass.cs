@@ -7,22 +7,26 @@ public class BaseJobClass : ScriptableObject
 {
     //Character Information
     public string jobName, jobDescription;
-    private int health, mana, stamina;
+    private int health, mana, stamina, hitDie;
 
     public void AddJob(BaseCharacter character) { 
         if(jobName == "Artisan") {
+            hitDie = 8;
             character.intelligence += 5;
             character.magic += 3;
             character.strength -= 4;
         }
         else if (jobName == "Brute")
         {
+            hitDie = 12;
             character.strength += 5;
             character.durability += 3;
             character.intelligence -= 4;
         }
-    }
 
+        // assign character health
+        character.health = ((hitDie * character.lvl) + ((character.durability-10) * character.lvl));
+    }
     public string JobName
     {
         get { return jobName; }

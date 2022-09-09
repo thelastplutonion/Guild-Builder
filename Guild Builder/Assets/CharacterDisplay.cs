@@ -7,6 +7,7 @@ public class CharacterDisplay : MonoBehaviour
 {
     public BaseCharacter character;
     public Text nameText;
+    public Text hpText;
     public Text ageText;
     public Text strengthText;
     public Text durText;
@@ -18,6 +19,7 @@ public class CharacterDisplay : MonoBehaviour
     void Start(){
         character.SetValues();
         nameText.text = character.name;
+        hpText.text = character.health.ToString();
         ageText.text = character.age.ToString();
         strengthText.text = character.strength.ToString();
         durText.text = character.durability.ToString();

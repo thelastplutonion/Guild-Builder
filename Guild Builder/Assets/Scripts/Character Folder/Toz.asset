@@ -14,12 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Toz
   job: {fileID: 11400000, guid: 3182dda99f14ec8468baa6a63998013c, type: 2}
+  lvl: 27
+  health: 8
   age: 22
-  strength: 18
-  durability: 19
-  agility: 15
-  intelligence: 10
-  magic: 13
-  luck: 16
-  potential: 15
-  stats: 12000000130000000f0000000a0000000d000000100000000f000000
+  strength: 3
+  durability: 12
+  agility: 5
+  intelligence: 24
+  magic: 20
+  luck: 6
+  potential: 8
+  stats: 070000000c0000000500000013000000110000000600000008000000
